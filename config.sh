@@ -1,4 +1,5 @@
 #!/bin/bash
+# 工信部测评GuestOS调优脚本
 
 sleep 30
 for i in `ip addr  | grep eth | grep mtu | awk -F ':' '{print $2}' | awk '{print $1}'`;do
